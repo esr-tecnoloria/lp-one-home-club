@@ -67,7 +67,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     overflow: hidden;
 }
 
@@ -108,7 +108,7 @@ body {
 .hero-text h1 {
     font-size: 42px;
     font-weight: 900;
-    color: #1976d2;
+    color: #1e40af;
     margin-bottom: 10px;
     text-align: center;
     letter-spacing: 3px;
@@ -209,7 +209,7 @@ body {
 }
 
 .cta-button {
-    background: #25d366;
+    background: #dc2626;
     color: white;
     border: none;
     padding: 20px 40px;
@@ -218,7 +218,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -227,9 +227,9 @@ body {
 }
 
 .cta-button:hover {
-    background: #128c7e;
+    background: #b91c1c;
     transform: translateY(-2px);
-    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 15px 40px rgba(220, 38, 38, 0.4);
 }
 
 .cta-button i {
@@ -239,7 +239,7 @@ body {
 /* Localização Section */
 .localizacao-section {
     padding: 100px 0;
-    background: #f8f9fa;
+    background: #f1f5f9;
 }
 
 .localizacao-section h2 {
@@ -268,7 +268,7 @@ body {
 }
 
 .localizacao-text h3 strong {
-    color: #007bff;
+    color: #1e40af;
 }
 
 .localizacao-image img {
@@ -309,17 +309,17 @@ body {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 30px;
-    color: #007bff;
+    color: #1e40af;
 }
 
 .apartamentos-text .dormitorios h3 {
     font-size: 28px;
     color: #333;
-    background: #f8f9fa;
+    background: #f1f5f9;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid #1e40af;
 }
 
 .apartamentos-image img {
@@ -333,7 +333,7 @@ body {
 /* Características Section */
 .caracteristicas-section {
     padding: 100px 0;
-    background: #f8f9fa;
+    background: #f1f5f9;
 }
 
 .caracteristicas-section h2 {
@@ -341,7 +341,7 @@ body {
     font-weight: 900;
     text-align: center;
     margin-bottom: 10px;
-    color: #1976d2;
+    color: #1e40af;
     letter-spacing: 3px;
 }
 
@@ -375,7 +375,7 @@ body {
 
 .caracteristica-icon {
     font-size: 48px;
-    color: #007bff;
+    color: #1e40af;
     margin-bottom: 20px;
 }
 
@@ -389,13 +389,13 @@ body {
 .caracteristica-item p {
     font-size: 16px;
     font-weight: 600;
-    color: #007bff;
+    color: #1e40af;
 }
 
 /* CTA Final Section */
 .cta-final-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
     text-align: center;
 }
 
@@ -458,11 +458,11 @@ body {
 
 .contato-item i {
     font-size: 24px;
-    color: #007bff;
+    color: #1e40af;
 }
 
 .contato-form {
-    background: #f8f9fa;
+    background: #f1f5f9;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -482,7 +482,7 @@ body {
 .contato-form input:focus,
 .contato-form textarea:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #1e40af;
 }
 
 .contato-form textarea {
@@ -517,7 +517,7 @@ body {
 .footer-brand {
     font-size: 18px !important;
     font-weight: 700 !important;
-    color: #1976d2 !important;
+    color: #1e40af !important;
     letter-spacing: 2px !important;
 }
 
