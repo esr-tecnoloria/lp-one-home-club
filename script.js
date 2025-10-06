@@ -140,8 +140,8 @@ Gostaria de receber mais informações sobre o empreendimento.`;
         });
     }
 
-    // Lazy loading para imagens
-    const images = document.querySelectorAll('img');
+    // Lazy loading para imagens (apenas para imagens que não são logo ou hero)
+    const images = document.querySelectorAll('img:not(.logo img):not(.hero-background img)');
     const imageObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -149,9 +149,14 @@ Gostaria de receber mais informações sobre o empreendimento.`;
                 img.style.opacity = '0';
                 img.style.transition = 'opacity 0.5s ease';
                 
-                img.onload = function() {
+                // Garantir que a imagem já carregou
+                if (img.complete) {
                     img.style.opacity = '1';
-                };
+                } else {
+                    img.onload = function() {
+                        img.style.opacity = '1';
+                    };
+                }
                 
                 imageObserver.unobserve(img);
             }
