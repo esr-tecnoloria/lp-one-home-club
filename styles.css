@@ -1,0 +1,593 @@
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.hero-text {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 900;
+    color: #1976d2;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.hero-text .subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.price-info {
+    margin-bottom: 30px;
+}
+
+.price-info .entrada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 5px solid #007bff;
+}
+
+.price-info .entrega {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #1976d2;
+}
+
+.price-info .localizacao {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #666;
+}
+
+.payment-plan {
+    margin-bottom: 30px;
+}
+
+.payment-plan > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.payment-plan .renda {
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    font-weight: 600;
+}
+
+.total-info {
+    margin-bottom: 30px;
+}
+
+.total-info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.total-info .total {
+    background: #d4edda;
+    border-left: 5px solid #28a745;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cta-section {
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.cta-button {
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+}
+
+.cta-button i {
+    font-size: 24px;
+}
+
+/* Localização Section */
+.localizacao-section {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.localizacao-section h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.localizacao-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.localizacao-text h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.localizacao-text h3 strong {
+    color: #007bff;
+}
+
+.localizacao-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.localizacao-section .cta-button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Apartamentos Section */
+.apartamentos-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.apartamentos-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.apartamentos-text h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.apartamentos-text h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.apartamentos-text .dormitorios h3 {
+    font-size: 28px;
+    color: #333;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border-left: 5px solid #007bff;
+}
+
+.apartamentos-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Características Section */
+.caracteristicas-section {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.caracteristicas-section h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1976d2;
+    letter-spacing: 3px;
+}
+
+.caracteristicas-section .section-subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.caracteristicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.caracteristica-item {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.caracteristica-item:hover {
+    transform: translateY(-5px);
+}
+
+.caracteristica-icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.caracteristica-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.caracteristica-item p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* CTA Final Section */
+.cta-final-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-align: center;
+}
+
+.cta-final-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.cta-final-section h2 strong {
+    color: #ffd700;
+}
+
+/* Contato Section */
+.contato-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.contato-section h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.contato-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contato-info h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contato-info p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.contato-item i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.contato-form {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.contato-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    padding: 40px 0;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-text p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.footer-brand {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #1976d2 !important;
+    letter-spacing: 2px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    
+    .hero-text {
+        margin: 20px;
+        padding: 40px 20px;
+    }
+    
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    
+    .hero-text .subtitle {
+        font-size: 24px;
+    }
+    
+    .localizacao-content,
+    .apartamentos-content,
+    .contato-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .caracteristicas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-final-section h2 {
+        font-size: 28px;
+    }
+    
+    .localizacao-section h2,
+    .apartamentos-text h2,
+    .caracteristicas-section h2,
+    .caracteristicas-section .section-subtitle,
+    .contato-section h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-text {
+        padding: 30px 15px;
+    }
+    
+    .hero-text h1 {
+        font-size: 24px;
+    }
+    
+    .hero-text .subtitle {
+        font-size: 20px;
+    }
+    
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    
+    .localizacao-section,
+    .apartamentos-section,
+    .caracteristicas-section,
+    .cta-final-section,
+    .contato-section {
+        padding: 60px 0;
+    }
+}
