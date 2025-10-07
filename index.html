@@ -4,86 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Home Club - Lançamento em Bertioga</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="./images/logo_onehome.png" alt="One Home Club">
-            </div>
-
-        </div>
-    </header>
-
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <img src="./images/one-home---fachada-reverendo-augusto-Yan9QDLJq5IO1zON.avif" alt="One Home Club">
-        </div>
-        <div class="hero-content">
-            <div class="container">
-                <div class="hero-text">
-                    <h1>ONE HOME CLUB</h1>
-                    <h2 class="subtitle">LANÇAMENTO</h2>
-                    <div class="price-info">
-                        <div class="apartamento-info">
-                            <div class="info-item">
-                                <span class="emoji">🏠</span>
-                                <span class="text">02 dormitórios</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="emoji">📐</span>
-                                <span class="text">86,82 m²</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="emoji">🚗</span>
-                                <span class="text">01 vaga de garagem</span>
-                            </div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <img src="./images/one-home---fachada-reverendo-augusto-Yan9QDLJq5IO1zON.avif" alt="One Home Club">
+            </div>
+            <div class="hero-right">
+                <div class="hero-content">
+                    <!-- Logo One Home Club -->
+                    <div class="onehome-logo">
+                        <img src="./images/logo_onehome.png" alt="One Home Club">
+                    </div>
+                    
+                    <!-- Título Principal -->
+                    <h1>LANÇAMENTO</h1>
+                    
+                    <!-- Informações do Apartamento -->
+                    <div class="apartamento-info">
+                        <div class="info-item">
+                            <span class="emoji">🏠</span>
+                            <span class="text">02 dormitórios</span>
                         </div>
-                        <div class="valor-total">
-                            <span class="label">A partir de</span>
-                            <span class="value">R$ 1.014.074,96</span>
+                        <div class="info-item">
+                            <span class="emoji">📐</span>
+                            <span class="text">86,82 m²</span>
                         </div>
-                        <div class="localizacao">
-                            <span class="label">Maitinga | Bertioga/SP</span>
+                        <div class="info-item">
+                            <span class="emoji">🚗</span>
+                            <span class="text">01 vaga de garagem</span>
                         </div>
                     </div>
                     
-                    <div class="payment-plan">
-                        <h3 class="fluxo-title">Fluxo de Pagamento</h3>
-                        <div class="entrada">
-                            <span class="emoji">💰</span>
-                            <span class="label">Entrada:</span>
-                            <span class="value">4x de R$ 50.703,75</span>
-                        </div>
-                        <div class="semestrais">
-                            <span class="emoji">📅</span>
-                            <span class="label">10 semestrais:</span>
-                            <span class="value">R$ 20.281,50</span>
-                        </div>
-                        <div class="mensais">
-                            <span class="emoji">🔑</span>
-                            <span class="label">60 mensais:</span>
-                            <span class="value">R$ 7.605,56</span>
-                        </div>
-                        <div class="chaves">
-                            <span class="emoji">🏡</span>
-                            <span class="label">Na entrega das chaves:</span>
-                            <span class="value">R$ 152.111,24</span>
+                    <!-- Valor Total -->
+                    <div class="valor-total">
+                        <span class="label">A partir de</span>
+                        <span class="value">R$ 1.014.074,96</span>
+                    </div>
+                    
+                    <!-- Localização -->
+                    <div class="localizacao">
+                        <span class="label">Maitinga | Bertioga/SP</span>
+                    </div>
+                    
+                    <!-- Fluxo de Pagamento -->
+                    <div class="fluxo-pagamento">
+                        <h3>Fluxo de Pagamento</h3>
+                        <div class="payment-blocks">
+                            <div class="payment-block">
+                                <span class="emoji">💰</span>
+                                <span class="label">Entrada:</span>
+                                <span class="value">R$ 450.703,75</span>
+                            </div>
+                            <div class="payment-block">
+                                <span class="emoji">📅</span>
+                                <span class="label">10 semestrais:</span>
+                                <span class="value">R$ 20.281,50</span>
+                            </div>
+                            <div class="payment-block">
+                                <span class="emoji">🔑</span>
+                                <span class="label">60 mensais:</span>
+                                <span class="value">R$ 7.605,56</span>
+                            </div>
+                            <div class="payment-block">
+                                <span class="emoji">🏡</span>
+                                <span class="label">Na entrega das chaves:</span>
+                                <span class="value">R$ 152.111,24</span>
+                            </div>
                         </div>
                     </div>
-
-
-                    <div class="cta-section">
-                        <h2>Você não encontrará no mesmo bairro nada parecido, surpreenda-se!</h2>
-                        <button class="cta-button" onclick="scrollToContact()">
-                            <i class="fab fa-whatsapp"></i>
-                            TENHO INTERESSE!
-                        </button>
+                    
+                    <!-- Seta para baixo -->
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
             </div>
@@ -92,35 +90,21 @@
 
     <!-- Localização Section -->
     <section class="localizacao-section">
-        <div class="container">
+        <div class="section-container">
             <h2>LOCALIZAÇÃO</h2>
             <div class="localizacao-content">
                 <div class="localizacao-text">
-                    <h3>Imóvel no Maitinga, a 50 metros da praia</h3>
-                    <p>Localização segura, próxima ao centro, com comércio e serviços a poucos passos.</p>
-                    
-                    <div class="localizacao-destaques">
-                        <div class="destaque-item">
-                            <h4>Maitinga: um dos bairros mais valorizados</h4>
-                        </div>
-                        <div class="destaque-item">
-                            <h4>50 m do mar</h4>
-                        </div>
-                        <div class="destaque-item">
-                            <h4>Região tranquila e bem servida</h4>
-                        </div>
-                        <div class="destaque-item">
-                            <h4>Mobilidade fácil para o centro</h4>
-                        </div>
-                    </div>
-                    
-                    <p class="cta-text">Solicite informações ou agende sua visita.</p>
+                    <h3>No bairro <strong>MAITINGA</strong></h3>
+                    <h3>No bairro <strong>mais nobre</strong> de Bertioga</h3>
+                    <h3>A apenas <strong>50 metros do mar</strong></h3>
+                    <h3>Na região do <strong>Reverendo Augusto</strong></h3>
+                    <h3><strong>Área segura</strong>, próximo ao centro</h3>
                 </div>
                 <div class="localizacao-image">
                     <img src="./images/Praia-de-Maitinga-2.webp" alt="Praia de Maitinga">
                 </div>
             </div>
-            <button class="cta-button" onclick="scrollToContact()">
+            <button class="cta-button" onclick="openWhatsApp()">
                 <i class="fab fa-whatsapp"></i>
                 TENHO INTERESSE!
             </button>
@@ -129,7 +113,7 @@
 
     <!-- Apartamentos Section -->
     <section class="apartamentos-section">
-        <div class="container">
+        <div class="section-container">
             <div class="apartamentos-content">
                 <div class="apartamentos-text">
                     <h2>SENDO 2 E 3 DORMITÓRIOS</h2>
@@ -147,54 +131,35 @@
 
     <!-- Características Section -->
     <section class="caracteristicas-section">
-        <div class="container">
-            <h2>ONE HOME CLUB</h2>
-            <h3 class="section-subtitle">CARACTERÍSTICAS</h3>
+        <div class="section-container">
+            <h2>CARACTERÍSTICAS</h2>
             <div class="caracteristicas-grid">
                 <div class="caracteristica-item">
-                    <div class="caracteristica-icon">
-                        <i class="fas fa-car"></i>
-                    </div>
                     <h3>VAGAS DE GARAGEM</h3>
                     <p><strong>1 E 2 VAGAS</strong></p>
                 </div>
                 
                 <div class="caracteristica-item">
-                    <div class="caracteristica-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
                     <h3>CHURRASQUEIRA GOURMET</h3>
                     <p><strong>NA VARANDA</strong></p>
                 </div>
                 
                 <div class="caracteristica-item">
-                    <div class="caracteristica-icon">
-                        <i class="fas fa-swimming-pool"></i>
-                    </div>
                     <h3>LAZER COMPLETO</h3>
                     <p><strong>PISCINA INDOOR E OUTDOOR</strong></p>
                 </div>
                 
                 <div class="caracteristica-item">
-                    <div class="caracteristica-icon">
-                        <i class="fas fa-sun"></i>
-                    </div>
                     <h3>SOLARIUM EXCLUSIVO</h3>
                     <p><strong>NO TERRAÇO</strong></p>
                 </div>
                 
                 <div class="caracteristica-item">
-                    <div class="caracteristica-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
                     <h3>BOX PRIVATIVO</h3>
                     <p><strong>NOS PAVIMENTOS DE GARAGEM</strong></p>
                 </div>
                 
                 <div class="caracteristica-item">
-                    <div class="caracteristica-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
                     <h3>ESPAÇO GOURMET</h3>
                     <p><strong>NA PISCINA</strong></p>
                 </div>
@@ -204,9 +169,9 @@
 
     <!-- CTA Final Section -->
     <section class="cta-final-section">
-        <div class="container">
+        <div class="section-container">
             <h2>DESEJA CONHECER <strong>CONDIÇÕES EXCLUSIVAS</strong> E RECEBER AS PLANTAS E IMAGENS?</h2>
-            <button class="cta-button" onclick="scrollToContact()">
+            <button class="cta-button" onclick="openWhatsApp()">
                 <i class="fab fa-whatsapp"></i>
                 TENHO INTERESSE!
             </button>
@@ -214,8 +179,8 @@
     </section>
 
     <!-- Mapa Section -->
-    <section id="mapa" class="mapa-section">
-        <div class="container">
+    <section class="mapa-section">
+        <div class="section-container">
             <h2>LOCALIZAÇÃO</h2>
             <div class="mapa-content">
                 <div class="mapa-info">
@@ -260,7 +225,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="section-container">
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="./images/logo_onehome.png" alt="One Home Club">
@@ -273,6 +238,6 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
