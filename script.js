@@ -64,7 +64,7 @@ Mensagem: ${message}
 Gostaria de receber mais informações sobre o empreendimento.`;
 
             // Abrir WhatsApp
-            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappUrl = `https://api.whatsapp.com/send/?phone=5511984104627&text=${encodeURIComponent(whatsappMessage)}&type=phone_number&app_absent=0`;
             window.open(whatsappUrl, '_blank');
             
             // Limpar formulário
@@ -168,11 +168,11 @@ Gostaria de receber mais informações sobre o empreendimento.`;
     });
 });
 
-// Função para scroll suave para contato
-function scrollToContact() {
-    const contactSection = document.getElementById('contato');
-    if (contactSection) {
-        contactSection.scrollIntoView({
+// Função para scroll suave para mapa
+function scrollToMapa() {
+    const mapaSection = document.getElementById('mapa');
+    if (mapaSection) {
+        mapaSection.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
@@ -218,9 +218,9 @@ function showNotification(message, type = 'info') {
 
 // Função para abrir WhatsApp diretamente
 function openWhatsApp(message = '') {
-    const defaultMessage = 'Olá! Tenho interesse no One Home Club. Gostaria de receber mais informações.';
+    const defaultMessage = 'Gostaria de mais informações';
     const finalMessage = message || defaultMessage;
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(finalMessage)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send/?phone=5511984104627&text=${encodeURIComponent(finalMessage)}&type=phone_number&app_absent=0`;
     window.open(whatsappUrl, '_blank');
 }
 
