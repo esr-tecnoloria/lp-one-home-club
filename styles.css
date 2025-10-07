@@ -18,67 +18,54 @@ body {
     padding: 0 20px;
 }
 
-/* Hero Section - Layout IDÊNTICO ao Murray */
+/* Hero Section - Conteúdo Centralizado */
 .hero {
-    min-height: 100vh;
+    min-height: 50vh;
     background: #0f172a;
-    display: flex;
-    align-items: center;
-}
-
-.hero-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.hero-left {
-    position: relative;
-    overflow: hidden;
-    background-image: url('./images/one-home---fachada-reverendo-augusto-Yan9QDLJq5IO1zON.avif');
+    background-image: url('./images/imagens/img_empreendimento.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
 }
 
-.hero-left::before {
+.hero::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(15, 23, 42, 0.7);
     z-index: 1;
 }
 
-.hero-left img {
-    display: none;
-}
-
-.hero-right {
-    background: #0f172a;
-    display: flex;
-    align-items: center;
-    padding: 40px 30px;
+.hero-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
     position: relative;
+    z-index: 2;
 }
 
 .hero-content {
     width: 100%;
-    max-width: 400px;
+    text-align: left;
 }
 
 /* Logo One Home Club */
 .onehome-logo {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .onehome-logo img {
-    height: 60px;
+    height: 70px;
     width: auto;
     filter: brightness(0) invert(1);
 }
@@ -88,9 +75,9 @@ body {
     font-size: 42px;
     font-weight: 900;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 /* Informações do Apartamento */
@@ -99,15 +86,17 @@ body {
     flex-direction: column;
     gap: 8px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .info-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
+    justify-content: center;
 }
 
 .info-item .emoji {
@@ -116,23 +105,12 @@ body {
 
 /* Valor Total */
 .valor-total {
-    text-align: center;
-    padding: 15px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    color: #ffffff;
+    text-align: left;
     margin-bottom: 15px;
 }
 
 .valor-total .label {
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.valor-total .value {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: #fbbf24;
 }
@@ -140,18 +118,18 @@ body {
 /* Localização */
 .localizacao {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .localizacao .label {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #ffffff;
 }
 
 /* Fluxo de Pagamento */
 .fluxo-pagamento {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .fluxo-pagamento h3 {
@@ -166,27 +144,39 @@ body {
 .payment-blocks {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .payment-block {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
+    gap: 15px;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px;
+    width: 100%;
 }
 
-.payment-block .emoji {
-    font-size: 16px;
+.payment-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
 }
 
 .payment-block .label {
     font-weight: 500;
-    flex: 1;
+    min-width: 120px;
 }
 
 .payment-block .value {
@@ -547,12 +537,12 @@ body {
     gap: 12px;
     text-decoration: none;
     letter-spacing: 1px;
-    transform: rotate(-2deg); /* Leve inclinação para a direita */
+    transform: none; /* Removido a inclinação */
 }
 
 .final-cta-button:hover {
     background: #128c7e;
-    transform: rotate(-2deg) translateY(-3px);
+    transform: translateY(-3px); /* Apenas elevação no hover */
     box-shadow: 0 20px 50px rgba(37, 211, 102, 0.5);
 }
 
@@ -560,37 +550,7 @@ body {
     font-size: 24px;
 }
 
-/* Footer */
-.footer {
-    background: #000000;
-    padding: 40px 0;
-    color: white;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo img {
-    height: 40px;
-    width: auto;
-    filter: brightness(0) invert(1);
-}
-
-.footer-text p {
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 5px;
-}
-
-.footer-brand {
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
-    letter-spacing: 2px !important;
-}
+/* Footer - Removido */
 
 /* Responsive Design */
 @media (max-width: 768px) {
