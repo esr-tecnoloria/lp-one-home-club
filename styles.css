@@ -467,117 +467,11 @@ body {
     60% { transform: translateY(-5px); }
 }
 
-/* Apartamentos Section */
-.apartamentos-section {
-    padding: 100px 0;
-    background: #0f172a;
-}
+/* Apartamentos Section - Removida */
 
-.apartamentos-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
+/* Características Section - Removida (usando caracteristicas-section-new) */
 
-.apartamentos-text h2 {
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 20px;
-    color: #ffffff;
-    letter-spacing: 2px;
-}
-
-.apartamentos-text h3 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: #fbbf24;
-}
-
-.apartamentos-text .dormitorios h3 {
-    font-size: 28px;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    border-left: 5px solid #fbbf24;
-}
-
-.apartamentos-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-}
-
-/* Características Section */
-.caracteristicas-section {
-    padding: 100px 0;
-    background: #ffffff;
-}
-
-.caracteristicas-section h2 {
-    font-size: 48px;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 60px;
-    color: #1e40af;
-    letter-spacing: 2px;
-}
-
-.caracteristicas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-.caracteristica-item {
-    background: #f8f9fa;
-    padding: 40px 30px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.caracteristica-item:hover {
-    transform: translateY(-5px);
-}
-
-.caracteristica-item h3 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.caracteristica-item p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #1e40af;
-}
-
-/* CTA Final Section */
-.cta-final-section {
-    padding: 100px 0;
-    background: #0f172a;
-    text-align: center;
-}
-
-.cta-final-section h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 40px;
-    line-height: 1.4;
-}
-
-.cta-final-section h2 strong {
-    color: #fbbf24;
-}
+/* CTA Final Section - Removida */
 
 .cta-button {
     background: #25d366;
@@ -607,81 +501,7 @@ body {
     font-size: 24px;
 }
 
-/* Mapa Section */
-.mapa-section {
-    padding: 100px 0;
-    background: #ffffff;
-}
-
-.mapa-section h2 {
-    font-size: 48px;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 60px;
-    color: #1e40af;
-    letter-spacing: 2px;
-}
-
-.mapa-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
-    margin-bottom: 60px;
-}
-
-.mapa-info h3 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.mapa-info p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-.mapa-destaques {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.destaque-item {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 15px 20px;
-    border-radius: 10px;
-    border-left: 4px solid #fbbf24;
-}
-
-.destaque-item h4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
-}
-
-.cta-text {
-    font-size: 18px;
-    font-weight: 600;
-    color: #fbbf24 !important;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.mapa-container {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.mapa-container iframe {
-    border-radius: 20px;
-}
+/* Mapa Section - Removida */
 
 /* Seção Final - CTA */
 .final-cta-section {
@@ -795,9 +615,7 @@ body {
         max-width: 100%;
     }
     
-    .localizacao-content,
-    .apartamentos-content,
-    .mapa-content {
+    .localizacao-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
@@ -829,10 +647,7 @@ body {
         font-size: 28px;
     }
     
-    .localizacao-section h2,
-    .apartamentos-text h2,
-    .caracteristicas-section h2,
-    .mapa-section h2 {
+    .localizacao-section h2 {
         font-size: 36px;
     }
     
@@ -874,10 +689,6 @@ body {
     }
     
     .localizacao-section,
-    .apartamentos-section,
-    .caracteristicas-section,
-    .cta-final-section,
-    .mapa-section,
     .segunda-secao,
     .caracteristicas-section-new,
     .final-cta-section {
