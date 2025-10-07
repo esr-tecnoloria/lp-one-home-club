@@ -75,23 +75,24 @@ Gostaria de receber mais informações sobre o empreendimento.`;
         });
     }
 
-    // Header transparente/sólido baseado no scroll
-    const header = document.querySelector('.header');
-    let lastScrollY = window.scrollY;
-
-    window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
-        
-        if (currentScrollY > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
-        } else {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        }
-        
-        lastScrollY = currentScrollY;
-    });
+    // Header transparente/sólido baseado no scroll (removido pois não temos header)
+    // const header = document.querySelector('.header');
+    // if (header) {
+    //     let lastScrollY = window.scrollY;
+    //     window.addEventListener('scroll', function() {
+    //         const currentScrollY = window.scrollY;
+    //         
+    //         if (currentScrollY > 100) {
+    //             header.style.background = 'rgba(255, 255, 255, 0.98)';
+    //             header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+    //         } else {
+    //             header.style.background = 'rgba(255, 255, 255, 0.95)';
+    //             header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+    //         }
+    //         
+    //         lastScrollY = currentScrollY;
+    //     });
+    // }
 
     // Contador animado para valores
     function animateCounter(element, target, duration = 2000) {
@@ -130,18 +131,18 @@ Gostaria de receber mais informações sobre o empreendimento.`;
         valueObserver.observe(el);
     });
 
-    // Efeito parallax suave no hero
-    const heroBackground = document.querySelector('.hero-background');
-    if (heroBackground) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.5;
-            heroBackground.style.transform = `translateY(${parallax}px)`;
-        });
-    }
+    // Efeito parallax suave no hero (removido pois agora usamos background-image)
+    // const heroBackground = document.querySelector('.hero-background');
+    // if (heroBackground) {
+    //     window.addEventListener('scroll', function() {
+    //         const scrolled = window.pageYOffset;
+    //         const parallax = scrolled * 0.5;
+    //         heroBackground.style.transform = `translateY(${parallax}px)`;
+    //     });
+    // }
 
-    // Lazy loading para imagens (apenas para imagens que não são logo ou hero)
-    const images = document.querySelectorAll('img:not(.logo img):not(.hero-background img)');
+    // Lazy loading para imagens (apenas para imagens que não são logo)
+    const images = document.querySelectorAll('img:not(.onehome-logo img)');
     const imageObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
