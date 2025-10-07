@@ -67,7 +67,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    background: #0f172a;
     overflow: hidden;
 }
 
@@ -95,20 +95,18 @@ body {
 }
 
 .hero-text {
-    background: rgba(255, 255, 255, 0.95);
+    background: transparent;
     padding: 60px 40px;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-text h1 {
     font-size: 42px;
     font-weight: 900;
-    color: #1e40af;
+    color: #ffffff;
     margin-bottom: 10px;
     text-align: center;
     letter-spacing: 3px;
@@ -117,7 +115,7 @@ body {
 .hero-text .subtitle {
     font-size: 32px;
     font-weight: 700;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 30px;
     text-align: center;
     letter-spacing: 2px;
@@ -125,75 +123,95 @@ body {
 
 .price-info {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
 .price-info .entrada {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-    padding: 15px 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    border-left: 5px solid #007bff;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;
 }
 
 .price-info .entrega {
     text-align: center;
-    margin-bottom: 15px;
-    padding: 10px;
-    background: #e3f2fd;
-    border-radius: 10px;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
     font-weight: 600;
-    color: #1976d2;
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;
 }
 
 .price-info .localizacao {
     text-align: center;
-    margin-bottom: 20px;
     font-weight: 500;
-    color: #666;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .payment-plan {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .payment-plan > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
     padding: 12px 20px;
-    background: #f8f9fa;
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;
 }
 
 .payment-plan .renda {
-    background: #fff3cd;
-    border-left: 5px solid #ffc107;
+    background: #fef3c7;
+    border-left: 5px solid #f59e0b;
     font-weight: 600;
+    color: #92400e;
 }
 
 .total-info {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .total-info > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    padding: 15px 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;
 }
 
 .total-info .total {
-    background: #d4edda;
-    border-left: 5px solid #28a745;
+    background: #dcfce7;
+    border-left: 5px solid #22c55e;
     font-weight: 700;
     font-size: 18px;
+    color: #166534;
 }
 
 .cta-section {
@@ -203,13 +221,13 @@ body {
 .cta-section h2 {
     font-size: 24px;
     font-weight: 700;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 30px;
     line-height: 1.4;
 }
 
 .cta-button {
-    background: #dc2626;
+    background: #25d366;
     color: white;
     border: none;
     padding: 20px 40px;
@@ -218,7 +236,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -227,9 +245,9 @@ body {
 }
 
 .cta-button:hover {
-    background: #b91c1c;
+    background: #128c7e;
     transform: translateY(-2px);
-    box-shadow: 0 15px 40px rgba(220, 38, 38, 0.4);
+    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
 }
 
 .cta-button i {
@@ -239,7 +257,7 @@ body {
 /* Localização Section */
 .localizacao-section {
     padding: 100px 0;
-    background: #f1f5f9;
+    background: #1e293b;
 }
 
 .localizacao-section h2 {
@@ -247,7 +265,7 @@ body {
     font-weight: 900;
     text-align: center;
     margin-bottom: 60px;
-    color: #333;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
@@ -263,12 +281,12 @@ body {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
     line-height: 1.4;
 }
 
 .localizacao-text h3 strong {
-    color: #1e40af;
+    color: #fbbf24;
 }
 
 .localizacao-image img {
@@ -287,7 +305,7 @@ body {
 /* Apartamentos Section */
 .apartamentos-section {
     padding: 100px 0;
-    background: white;
+    background: #0f172a;
 }
 
 .apartamentos-content {
@@ -301,7 +319,7 @@ body {
     font-size: 48px;
     font-weight: 900;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
@@ -309,17 +327,17 @@ body {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 30px;
-    color: #1e40af;
+    color: #fbbf24;
 }
 
 .apartamentos-text .dormitorios h3 {
     font-size: 28px;
-    color: #333;
-    background: #f1f5f9;
+    color: #ffffff;
+    background: #1e293b;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    border-left: 5px solid #1e40af;
+    border-left: 5px solid #fbbf24;
 }
 
 .apartamentos-image img {
@@ -333,7 +351,7 @@ body {
 /* Características Section */
 .caracteristicas-section {
     padding: 100px 0;
-    background: #f1f5f9;
+    background: #ffffff;
 }
 
 .caracteristicas-section h2 {
@@ -361,7 +379,7 @@ body {
 }
 
 .caracteristica-item {
-    background: white;
+    background: #f8f9fa;
     padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
@@ -395,7 +413,7 @@ body {
 /* CTA Final Section */
 .cta-final-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    background: #0f172a;
     text-align: center;
 }
 
@@ -414,7 +432,7 @@ body {
 /* Contato Section */
 .contato-section {
     padding: 100px 0;
-    background: white;
+    background: #ffffff;
 }
 
 .contato-section h2 {
@@ -422,7 +440,7 @@ body {
     font-weight: 900;
     text-align: center;
     margin-bottom: 60px;
-    color: #333;
+    color: #1e40af;
     letter-spacing: 2px;
 }
 
@@ -462,7 +480,7 @@ body {
 }
 
 .contato-form {
-    background: #f1f5f9;
+    background: #f8f9fa;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -476,6 +494,8 @@ body {
     border: 2px solid #e9ecef;
     border-radius: 10px;
     font-size: 16px;
+    background: #ffffff;
+    color: #333;
     transition: border-color 0.3s ease;
 }
 
@@ -492,7 +512,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #333;
+    background: #000000;
     padding: 40px 0;
     color: white;
 }
@@ -506,18 +526,19 @@ body {
 .footer-logo img {
     height: 40px;
     width: auto;
+    filter: brightness(0) invert(1);
 }
 
 .footer-text p {
     font-size: 14px;
-    color: #ccc;
+    color: #ffffff;
     margin-bottom: 5px;
 }
 
 .footer-brand {
     font-size: 18px !important;
     font-weight: 700 !important;
-    color: #1e40af !important;
+    color: #ffffff !important;
     letter-spacing: 2px !important;
 }
 
