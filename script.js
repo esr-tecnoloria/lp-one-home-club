@@ -75,42 +75,7 @@ Gostaria de receber mais informações sobre o empreendimento.`;
         });
     }
 
-    // Contador animado para valores
-    function animateCounter(element, target, duration = 2000) {
-        let start = 0;
-        const increment = target / (duration / 16);
-        
-        function updateCounter() {
-            start += increment;
-            if (start < target) {
-                element.textContent = Math.floor(start).toLocaleString('pt-BR');
-                requestAnimationFrame(updateCounter);
-            } else {
-                element.textContent = target.toLocaleString('pt-BR');
-            }
-        }
-        
-        updateCounter();
-    }
-
-    // Observar elementos com valores para animação
-    const valueElements = document.querySelectorAll('.value');
-    const valueObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const text = entry.target.textContent;
-                const number = parseFloat(text.replace(/[^\d,]/g, '').replace(',', '.'));
-                if (!isNaN(number)) {
-                    animateCounter(entry.target, number);
-                }
-                valueObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    valueElements.forEach(el => {
-        valueObserver.observe(el);
-    });
+    // Valores aparecem diretamente - sem animação
 
     // Lazy loading para imagens (apenas para imagens que não são logo)
     const images = document.querySelectorAll('img:not(.onehome-logo img)');
