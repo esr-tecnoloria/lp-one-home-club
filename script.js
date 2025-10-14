@@ -64,7 +64,7 @@ Mensagem: ${message}
 Gostaria de receber mais informações sobre o empreendimento.`;
 
             // Abrir WhatsApp
-            const whatsappUrl = `https://api.whatsapp.com/send/?phone=5511984104627&text=${encodeURIComponent(whatsappMessage)}&type=phone_number&app_absent=0`;
+            const whatsappUrl = `https://api.whatsapp.com/send/?phone=5511981743897&text=${encodeURIComponent(whatsappMessage)}&type=phone_number&app_absent=0`;
             window.open(whatsappUrl, '_blank');
             
             // Limpar formulário
@@ -157,7 +157,7 @@ function showNotification(message, type = 'info') {
 function openWhatsApp(message = '') {
     const defaultMessage = 'Gostaria de mais informações';
     const finalMessage = message || defaultMessage;
-    const whatsappUrl = `https://api.whatsapp.com/send/?phone=5511984104627&text=${encodeURIComponent(finalMessage)}&type=phone_number&app_absent=0`;
+    const whatsappUrl = `https://api.whatsapp.com/send/?phone=5511981743897&text=${encodeURIComponent(finalMessage)}&type=phone_number&app_absent=0`;
     window.open(whatsappUrl, '_blank');
 }
 
